@@ -75,6 +75,29 @@ lentry5 = tk.Entry(width=1, justify='center')
 lentry5.insert(0,"-")
 lentry5.place(relx=0.575, rely=0.1, anchor="center")
 
+def resetWordle():
+    lentry1.delete(0, tk.END)
+    lentry1.insert(0,"-")
+
+    lentry2.delete(0, tk.END)
+    lentry2.insert(0,"-")
+
+    lentry3.delete(0, tk.END)
+    lentry3.insert(0,"-")
+
+    lentry4.delete(0, tk.END)
+    lentry4.insert(0,"-")
+
+    lentry5.delete(0, tk.END)
+    lentry5.insert(0,"-")
+
+reset = tk.Button(
+    text = "reset wordle",
+    width = 10,
+    activeforeground="white",
+    command = resetWordle
+).place(relx=0.495, rely=0.17, anchor="center")
+
 yellows = []
 yellowi = tk.Label(text="type in yellow letters here").place(relx=0.35, rely=0.2, anchor="e")
 
